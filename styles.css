@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(50deg,#EDBFC6,#BA274A, #841C26);
+  margin: 0;
+  padding: 0;
+}
+
+#drum_machine {
+  text-align: center;
+}
+
+.app_title {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin: 50px auto;
+  color: #eee;
+  font-size: 24px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.display-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 50px auto;
+  padding: 0;
+  background: rgb(255, 255, 255, 0.1);
+  height: 400px;
+  width: 500px;
+}
+
+#display-pads {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(20px,100px));
+  grid-template-rows: 60px 60px 60px;
+  grid-gap: 5px;
+  margin-top: 50px;
+}
+
+.drum-pad {
+  cursor: pointer;
+  background-color: #333333;
+  color: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
+  border-radius: 4px;
+  transition: all 200ms ease-in-out;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0 3px 4px 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drum-pad:hover{
+  background-color: #404040;
+}
+
+.current-text {
+  text-align: center;
+  position: relative;
+  font-size: 50px;
+  color: #eee;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
